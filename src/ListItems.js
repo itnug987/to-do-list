@@ -10,6 +10,11 @@ function ListItems(props){
                     <p>
                         <input type="checkbox"
                         id={item.key}
+                        onChange={
+                            (e) => {
+                                props.setCompleted(item.key)
+                            }
+                        }
                         ></input>
                         <input type="text" 
                         id={item.key} 

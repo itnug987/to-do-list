@@ -21,6 +21,7 @@ class App extends React.Component{
     this.addItem = this.addItem.bind(this);
     this.deleteItem = this.deleteItem.bind(this);
     this.setUpdate = this.setUpdate.bind(this);
+    this.setCompleted = this.setCompleted.bind(this);
 
   }
 
@@ -78,6 +79,20 @@ class App extends React.Component{
     })
   }
 
+  setCompleted(key){
+    const items = this.state.items;
+
+    items.map(item =>{
+      if(item.key === key){
+          item.text = item.text+ " -- completed"
+      }
+    })
+
+    this.setState({
+      items: items
+    })
+  }
+
   render(){
     return(
       <div>
@@ -93,7 +108,7 @@ class App extends React.Component{
             </form>
       </header>
 
-      <ListItems items={this.state.items} deleteItem = {this.deleteItem} setUpdate = {this.setUpdate}/>
+      <ListItems items={this.state.items} deleteItem = {this.deleteItem} setUpdate = {this.setUpdate} setCompleted = {this.setCompleted}/>
       </div>
 
       </div>
