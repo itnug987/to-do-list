@@ -1,4 +1,8 @@
-<<<<<<< HEAD
+# to-do-list
+A simple to do list application built using React Js
+
+Live project - https://itnug987.github.io/to-do-list/
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -68,6 +72,5 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 =======
-# to-do-list
-A simple to do list application built using React Js
->>>>>>> c28bf9e5432da28be80a219d9bb12b76583d71c1
+
+
